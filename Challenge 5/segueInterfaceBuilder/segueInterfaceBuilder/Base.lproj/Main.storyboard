@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zW1-5U-Wdl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FFP-YD-zaE">
+            <objects>
+                <navigationController id="zW1-5U-Wdl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eT8-qI-hfz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PL3-Ht-n20"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZl-5J-G92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1742" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segueInterfaceBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edR-dR-sHq">
+                                <rect key="frame" x="114" y="421" width="186" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="View EY logo">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="AaV-QZ-spn" kind="show" id="7hz-te-w0R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="edR-dR-sHq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5gn-9q-oLF"/>
+                            <constraint firstItem="edR-dR-sHq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cVR-ax-Fz9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N5s-QW-OTp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SCj-wj-JtV">
+            <objects>
+                <viewController id="AaV-QZ-spn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OxA-mH-Uf4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="EYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sis-bn-jal">
+                                <rect key="frame" x="87" y="323" width="240" height="251"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LLs-wH-m5V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sis-bn-jal" firstAttribute="centerX" secondItem="LLs-wH-m5V" secondAttribute="centerX" id="UF9-Ws-q9h"/>
+                            <constraint firstItem="sis-bn-jal" firstAttribute="centerY" secondItem="LLs-wH-m5V" secondAttribute="centerY" id="WUX-SR-8CR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yy-GC-lcS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvz-62-gJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EYLogo" width="208" height="208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
